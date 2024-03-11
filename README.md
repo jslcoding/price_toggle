@@ -26,8 +26,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [price toggle repository](https://github.com/jslcoding/price_toggle)
+- Live Site URL: [price toggle site](https://jslcoding.github.io/price_toggle/)
 
 ## My process
 
