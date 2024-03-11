@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">    
+    <title>Frontend Mentor | Price toggle component</title>
+</head>
+<body class="font-montserrat text-center bg-lgray py-20">
+    <header>
+        <h1 class="hidden">Price toggle component</h1>
+    </header>
+    <main class="my-0 mx-auto text-grayer">
+        <section class="type-pricing py-10">
+            <h2 class="font-bold text-4xl">Our Pricing</h2>
+            <div id="toggle" class="flex justify-center items-center my-5">
+                <p class="text-gray font-semibold mr-5">Annually</p>
+                <label class="switch bg-lavander rounded-full w-14 h-8 relative inline-block">
+                    <input type="checkbox" id="checkbox" class="opacity-0 w-full" onclick="check()"; />
+                    <span class="slider absolute cursor-pointer top-0 left-0
+                                before:absolute before:bg-white before:h-6 before:w-6 before:rounded-full before:left-1 before:top-1 
+                                before:transition-all before:delay-150 before:translate-x-0">
+                    </span>
+                </label>
+                <p class="text-gray font-semibold ml-5">Monthly</p>
+            </div>
+        </section>
+        <section class="pricing-cards md:inline-grid md:grid-cols-3 p-5">
+            <div id="basic" class="bg-white py-5 px-8 rounded-md mb-10 md:mb-0 w-[30rem]">
+                <h4 class="font-bold text-lg p-2 ">Basic</h4>
+                <p id="price-month" class="price1 before:content-['$'] before:mr-2 before:text-4xl before:align-middle text-7xl font-bold text-dark-gray px-10">19.99</p>
+                <p id="price-year" class="price2 before:content-['$'] before:mr-2 before:text-4xl before:align-middle text-7xl font-bold text-dark-gray">199.99</p>
+                <p class="py-4 mt-4 mb-2 font-bold border-t-lgray border-t-2">500 GB Storage</p>
+                <p class="py-4 my-2 font-bold border-t-lgray border-t-2">2 Users Allowed</p>
+                <p class="py-5 mt-2 mb-4 font-bold border-t-lgray border-t-2 border-b-lgray border-b-2">Send up to 3 GB</p>
+                <a href="#" title="learn more"><button class="bg-gradient-to-tr from-lavander to-purple my-5 py-2 px-4 w-[100%] text-white uppercase font-semibold tracking-wide rounded-md transition-all ease-in-out delay-75 hover:bg-none hover:outline hover:outline-2 hover:outline-dark-gray hover:ouline-[solid] hover:text-dark-gray">Learn More</button></a>
+            </div>
+            <div id="professional" class="bg-gradient-to-tr from-lavander to-purple py-5 px-10 md:mt-[-5%] md:pb-30 rounded-md text-white mb-10 md:mb-0 ">
+                <h4 class="font-bold text-lg p-10 ">Professional</h4>
+                <p id="price-month" class="price1 before:content-['$'] before:mr-2 before:text-4xl before:align-middle text-7xl font-bold text-white">24.99</p>
+                <p id="price-year" class="price2 before:content-['$'] before:mr-2 before:text-4xl before:align-middle text-7xl font-bold text-white">249.99</p>
+                <p class="py-4 mt-4 mb-2 font-bold border-t-lgray border-t">1 TB Storage</p>
+                <p class="py-4 my-2 font-bold border-t-lgray border-t">5 Users Allowed</p>
+                <p class="py-5 mt-2 mb-4 font-bold border-t-lgray border-t border-b-lgray border-b">Send up to 10 GB</p>
+                <a href="#" title="learn more"><button class="bg-white mt-5 mb-10 py-2 px-4 w-[100%] text-purple uppercase font-semibold tracking-wide rounded-md transition-all ease-in-out delay-75 hover:bg-white hover:bg-opacity-0 hover:outline hover:outline-2 hover:outline-white hover:ouline-[solid] hover:text-white">Learn More</button></a>
+            </div>            
+            <div id="master" class="bg-white py-5 px-10 rounded-md">
+                <h4 class="font-bold text-lg p-2 ">Master</h4>
+                <p id="price-month" class="price1 before:content-['$'] before:mr-2 before:text-4xl before:align-middle text-7xl font-bold text-dark-gray px-10">39.99</p>
+                <p id="price-year" class="price2 before:content-['$'] before:mr-2 before:text-4xl before:align-middle text-7xl font-bold text-dark-gray px-10">399.99</p>
+                <p class="py-4 mt-4 mb-2 font-bold border-t-lgray border-t-2">2 TB Storage</p>
+                <p class="py-4 my-2 font-bold border-t-lgray border-t-2">10 Users Allowed</p>
+                <p class="py-5 mt-2 mb-4 font-bold border-t-lgray border-t-2 border-b-lgray border-b-2">Send up to 20 GB</p>
+                <a href="#" title="learn more"><button class="bg-gradient-to-tr from-lavander to-purple my-5 py-2 px-4 w-[100%] text-white uppercase font-semibold tracking-wide rounded-md transition-all ease-in-out delay-75 hover:bg-none hover:outline hover:outline-2 hover:outline-dark-gray hover:ouline-[solid] hover:text-dark-gray">Learn More</button></a>
+            </div>            
+        </section>
+    </main>   
+    <footer class="py-20">
+        <p class="font-semibold text-dark-gray">Created by <a class="before:content-['→'] after:content-['←'] hover:text-purple font-bold" href="https://github.com/jslcoding" title="jslcoding github"> jslcoding </a> @2024</p>
+    </div>
+    </footer>
+</body>
+<script src="./js/scripts.js" ></script>
+</html>
